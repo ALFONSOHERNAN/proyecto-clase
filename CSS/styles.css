@@ -1,0 +1,23 @@
+/* SELECTOR PADRE */
+
+:root{
+
+    --color-primario: #EC111A;
+    --color-secundario: #082BA5;
+    --color-terciario: #007bdf;
+    --color-parrafos: #53575a;
+    --color-titulos: #282d31;
+    --color-sombras: #282d31;
+}
+
+/* SELECTOR DE ETIQUETA */
+
+h1{
+    COLOR:var(--color-primario);
+    font-family: 'Montserat';
+    font-weight: 900;
+}
+h2{
+
+    color:gold
+}

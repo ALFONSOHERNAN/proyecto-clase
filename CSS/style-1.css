@@ -1,0 +1,166 @@
+/* SELECTOR PADRE */
+
+:root{
+
+    --color-primario: #EC111A;
+    --color-secundario: #082BA5;
+    --color-terciario: #007bdf;
+    --color-parrafos: #53575a;
+    --color-titulos: #282d31;
+    --color-sombras: #282d31;
+    --z-normal: 1;
+    --z-tooltrip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+} 
+
+/* SELECTOR UNIVERSAL  */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
+}
+
+/* SELECTOR DE CLASE */
+
+.boton-whatapp{
+    display: in;
+
+    position: fixed;
+    bottom: 1em;
+    left:   1em;
+    font-size: 2em;
+    background-color: #4dc247;
+    padding: .7em 1em;
+     border-radius: 100%; 
+    line-height:  2.5em;
+    color: #fff;
+    z-index: var(--z-fixed);
+    border: 4px solid var(--color-primario)
+
+}
+
+.boton-whatapp:hover{
+
+    color: #fff;
+    background-color: #35ad32;
+
+}
+
+/* inicio de menu */
+
+header{
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:  var(--z-modal);
+    box-shadow: 0 0 4px var(--color-sombras);
+
+}
+
+menu{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 1em;
+
+}
+.img-logo{
+    height: 4em;
+}
+
+.icono-menu{
+   /* visibility: hidden; */
+    display: none;
+}
+ .enlaces a{
+    color: var(--color-titulos);
+    text-decoration: none;
+    padding: .5em;
+    font-size: .9em;
+
+ }
+/**
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as an exercise for the reader.
+ */
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+ @media screen and(max-width: 1023px) {
+    .menu{
+        flex-direction: column;
+    }
+    .icono-menu{
+        display: block;
+        color: var(--color-primario);
+        font-size: 2em;
+        margin-top: .5em;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .enlaces{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+ }
+
+ /* fin de manu */
+
+.titulo-2{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size:  1.5em;
+}
+
+.titulo-1{
+    font-family: 'Monserrat';
+    font-weight: 600;
+    color: var(--color-primario    );
+    font-size: 1.6em;
+    letter-spacing: -1px;
+    margin-top: -0.4em;
+}
+
+.parrafo{
+    font-family: 'Roboto';
+    color: var(--color-parrafos);
+    text-align: justify;
+/*    line-height: 1.5em; */
+    line-height: 1.5em;
+}
+
+.boton{
+    background-color: var(--color-primario);
+/*    color: #fff; */
+        color: #fff;
+    padding: 1em;
+    border-radius: .5em;
+    font-family: 'roboto';
+    font-weight:  500;
+    text-decoration: none;
+}
+
+.boton:hover{
+    color: #fff;
+    background-color: var(--color-secundario);
+    transition: background-color .5s ease-in-out ;
+}

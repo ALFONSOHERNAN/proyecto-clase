@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyectos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1>PROYECTOS</h1>
+
+  <div id="inicio">
+
+    <div class="card">
+      <img src="imagen1.jpg" alt="ERP Financiera Regional">
+      <h2>Integración de ERP: Financiera Regional</h2>
+      <p>Implementamos un sistema ERP diseñado para optimizar la gestión financiera, cumplimiento normativo y atención al cliente de la Financiera Regional.</p>
+      <button class="btn" onclick="mostrarDetalle('detalle1')">Saber más</button>
+    </div>
+
+    <div class="card">
+      <img src="imagen2.jpg" alt="Ticketing Eventos en Vivo">
+      <h2>Plataforma de Ticketing para Eventos en Vivo</h2>
+      <p>Desarrollamos e implementamos una solución integral de venta de tickets para una productora de espectáculos con más de 100 eventos anuales.</p>
+      <button class="btn" onclick="mostrarDetalle('detalle2')">Saber más</button>
+    </div>
+
+  </div>
+
+  <div id="detalle1" class="detalle">
+    <h2>Detalle del Proyecto ERP</h2>
+    <img src="imagen3.jpg" alt="Detalle ERP">
+    <br>
+    <button class="volver" onclick="volver()">Volver</button>
+  </div>
+
+  <div id="detalle2" class="detalle">
+    <h2>Detalle del Proyecto Ticketing</h2>
+    <img src="imagen4.jpg" alt="Detalle Ticketing">
+    <br>
+    <button class="volver" onclick="volver()">Volver</button>
+  </div>
+
+  <script>
+    function mostrarDetalle(id) {
+      document.getElementById('inicio').style.display = 'none';
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function volver() {
+      document.getElementById('inicio').style.display = 'block';
+      document.getElementById('detalle1').style.display = 'none';
+      document.getElementById('detalle2').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
